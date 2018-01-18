@@ -16,6 +16,7 @@ namespace PdfCreatorApplication.WebSite
         /// </summary>
         protected void Application_Start()
         {
+            // Start the application
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
