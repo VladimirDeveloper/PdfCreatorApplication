@@ -1,16 +1,18 @@
-==========================================================
-Install iTextSharp library into Core-part
-==========================================================
-PM> Install-Package iTextSharp -Version 5.5.12
-PM> Install-Package itextsharp.xmlworker -Version 5.5.12
-
-==========================================================
-Deploy database
-==========================================================
+=======================================================================
+1. Database deployment
+=======================================================================
 ..\SqlScripts\tables.sql
 ..\SqlScripts\data.sql
 
-==========================================================
-Connection to database
-==========================================================
+=======================================================================
+2. Connection to database
+=======================================================================
 Don't forget change the connection inside of ConnectionStrings.config
+
+=======================================================================
+Dependency: iTextSharp library used. 
+To install it use (not required in this project):
+=======================================================================
+PM> Install-Package iTextSharp -Version 5.5.12
+PM> Install-Package itextsharp.xmlworker -Version 5.5.12
+
