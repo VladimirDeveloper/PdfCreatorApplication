@@ -7,7 +7,7 @@
 =======================================================================
 2. Connection to database
 =======================================================================
-Don't forget change the connection inside of ConnectionStrings.config
+Don't forget to change the connection inside of ConnectionStrings.config
 
 =======================================================================
 Dependency: iTextSharp library used. 
