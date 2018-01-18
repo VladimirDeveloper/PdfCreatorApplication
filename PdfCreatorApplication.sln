@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfCreatorApplication.WebSite", "PdfCreatorApplication.WebSite\PdfCreatorApplication.WebSite.csproj", "{59E4134C-B232-4091-8F6D-2A65292CD247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfCreatorApplication.Core", "PdfCreatorApplication.Core\PdfCreatorApplication.Core.csproj", "{40A35742-8277-4A0D-B243-74447D06A68D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A592C57-D922-4A74-98EE-7DE24D5D1DA7}"
+	ProjectSection(SolutionItems) = preProject
+		install.txt = install.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E4134C-B232-4091-8F6D-2A65292CD247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E4134C-B232-4091-8F6D-2A65292CD247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E4134C-B232-4091-8F6D-2A65292CD247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E4134C-B232-4091-8F6D-2A65292CD247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A35742-8277-4A0D-B243-74447D06A68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A35742-8277-4A0D-B243-74447D06A68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A35742-8277-4A0D-B243-74447D06A68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A35742-8277-4A0D-B243-74447D06A68D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

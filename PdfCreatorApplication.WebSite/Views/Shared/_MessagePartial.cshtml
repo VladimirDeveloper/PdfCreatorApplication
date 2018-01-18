@@ -1,0 +1,55 @@
+﻿@using PdfCreatorApplication.WebSite.ViewModels
+@model PdfCreatorApplication.WebSite.ViewModels.MessageModel
+
+@if (Model != null && !string.IsNullOrEmpty(Model.Text))
+{
+    var className = "";
+    switch (Model.Type)
+    {
+        case MessageType.QuickMessage:
+            className = "alert alert-info alert-dismissable";
+            break;
+
+        case MessageType.Information:
+            className = "alert alert-success alert-dismissable";
+            break;
+
+        case MessageType.Warning:
+            className = "alert alert-warning alert-dismissable";
+            break;
+
+        case MessageType.Error:
+            className = "alert alert-danger alert-dismissable";
+            break;
+        
+        default:
+            className = "alert alert-info alert-dismissable";
+            break;
+
+    }
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var quickMessage = $("#quickMessage");
+            if (quickMessage != null) {
+                quickMessage.delay(3000).fadeOut('slow');
+            }
+        });
+    </script>
+    
+    <div id=@(Model.Type == MessageType.QuickMessage ? "quickMessage" : "alertMessage")  
+         class="@className" 
+        @*style="float: left;clear: both;" *@
+        role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"
+            onclick="this.parentElement.style.display='none';">
+            &times;</button>
+        <strong>@Model.Title</strong>
+        @Html.Raw(Model.Text)
+        @if (!string.IsNullOrEmpty(Model.Details))
+        {
+            <span style="font-weight: normal;"><br>@Html.Raw(Model.Details)</span>
+        }
+    </div>
+}
+

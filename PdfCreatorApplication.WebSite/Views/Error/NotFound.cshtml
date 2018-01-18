@@ -1,0 +1,22 @@
+﻿@model HandleErrorInfo
+@{
+    ViewBag.Title = "Не найдено :(";
+}
+<hgroup class="title">
+    <h1 class="error">Запрашиваемая страница не найдена.</h1>
+    <h2 class="error">Простите, к сожалению то, что Вы ищете не найдено на нашем сервере :(</h2>
+</hgroup>
+@if (Model != null)
+{
+    <blockquote id="errorDetails">
+        <h3 class="error">@Model.Exception.Message</h3>
+        <br/>
+        <code>
+            <strong>Controller:</strong>@(Model.ControllerName)<br />
+            <br />
+            <strong>Action (address):</strong>@(Model.ActionName)<br />
+            <br />
+            <strong>Exception:</strong>@(Model.Exception.ToString())
+        </code>
+    </blockquote>
+}

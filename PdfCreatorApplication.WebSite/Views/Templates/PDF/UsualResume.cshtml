@@ -1,0 +1,41 @@
+﻿@using iTextSharp.text.pdf.qrcode
+@using PdfCreatorApplication.Core.BusinessLogic.Models
+@using PdfCreatorApplication.Core.Utils.Helpers
+@model PdfCreatorApplication.WebSite.ViewModels.ResumeViewModels.ResumeViewModel
+@{
+    var resume = Model.Resume ?? new Resume();
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@resume.DesiredJobDescription - резюме кандидата.</title>
+</head>
+<body>
+    <blockquote style="font-family: arialuni, arial;">
+        <h2>@resume.CandidateName</h2>
+    </blockquote>
+    <div style="min-width: 1237px; max-width: 1270px; position: relative; margin: 0 auto;">
+        <img src="data:imagestream/@resume.Photo" />
+    </div>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.ContactInformation
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.DesiredJobDescription
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.ExperienceDescription
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.MainSkills
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.AchievementsDescription
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        @resume.EducationDescription
+    </blockquote>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿@model HandleErrorInfo
+@{ 
+    ViewBag.Title = "Ой... :(";
+}
+<hgroup class="title">
+    <h1 class="error">Ой, что-то пошло не так :(</h1>
+    <h2 class="error">Просим прощения за временные неудобства. Мы проанализируем эту ситуацию и постараемся исправить её в ближайшее время.</h2>
+</hgroup>
+@if (Model != null)
+{
+    <blockquote id="errorDetails">
+        <h3 class="error">@Model.Exception.Message</h3>
+        <br/>
+        <code>
+            <strong>Controller:</strong>@(Model.ControllerName)<br />
+            <br />
+            <strong>Action (address):</strong>@(Model.ActionName)<br />
+            <br />
+            <strong>Exception:</strong>@(Model.Exception.ToString())
+        </code>
+    </blockquote>
+}
+

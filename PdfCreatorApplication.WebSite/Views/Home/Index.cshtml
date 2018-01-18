@@ -1,0 +1,78 @@
+﻿@using System.Linq
+@using UrlHelper = PdfCreatorApplication.Core.Utils.Helpers.UrlHelper
+@using PdfCreatorApplication.Core.BusinessLogic.Export
+@model PdfCreatorApplication.WebSite.ViewModels.ResumeViewModels.ResumeListViewModel
+
+@{
+    ViewBag.Title = "Резюме кандидатов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Список резюме</h2>
+@if (Model != null)
+{
+    if (Model.Message != null)
+    {
+    @Html.Partial("../Shared/_MessagePartial", Model.Message)
+    }
+
+    if (Model.Resumes.Any())
+    {
+    <div style="width: 100%;float:left;">
+        <table>
+            <thead style="font-weight: bolder; text-align: left;">
+                <tr>
+                    <td>Имя</td>
+                    <td>Желаемая должность</td>
+                    <td>Основные навыки</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var resume in Model.Resumes)
+                {
+                    <tr style="cursor: pointer;" onclick="window.open('@Url.Action("ShowResume", "Home", new { candidateId = resume.Id })','_blank');">
+                        <td>
+                            @resume.CandidateName
+                        </td>
+                        <td>
+                            @resume.DesiredJobDescription
+                        </td>
+                        <td>
+                            @resume.MainSkills
+                        </td>
+                        <td onclick="event.cancelBubble=true;">
+                            @using (Html.BeginForm("Export", "Home", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                <input type="hidden" name="type" value="@FileType.Pdf"/>
+                                <input type="hidden" name="candidateId" value="@resume.Id"/>
+                                <input  type="image" 
+                                        name="submit" 
+                                        src="@UrlHelper.ResolveUrl("~/Images/pdf.png")" 
+                                        style="width:24px;height: 24px; vertical-align: bottom; border: none;background: transparent;cursor: pointer;" 
+                                        alt="Резюме в PDF" title="Резюме в PDF" />
+                            }                            
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    }
+    else
+    {
+    <div>
+        <span style="font-weight: bold; color: darkgoldenrod;">
+            Нет доступных для просмотра резюме.      
+        </span>
+    </div>
+    }
+}
+
+<script>
+    $(document).ready(function() {
+        //alert('!!!');
+    });
+</script>

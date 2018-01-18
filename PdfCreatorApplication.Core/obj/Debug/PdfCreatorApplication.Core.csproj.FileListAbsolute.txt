@@ -1,0 +1,21 @@
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.pdb
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.dll
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.xmlworker.dll
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.xml
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Private\ProjectsOrganizer\RelatedProjects\PDF Creator\ResumePDFCreator\SourceCode\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.pdb
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.pdb
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.xmlworker.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\bin\Debug\itextsharp.xml
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\SourceCode\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.pdb
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\bin\Debug\PdfCreatorApplication.Core.pdb
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\bin\Debug\itextsharp.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\bin\Debug\itextsharp.xmlworker.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\bin\Debug\itextsharp.xml
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.dll
+E:\Business\Constant.Gitlab\SourceCodes\CSharpTestProject\PdfCreatorApplication.Core\obj\Debug\PdfCreatorApplication.Core.pdb

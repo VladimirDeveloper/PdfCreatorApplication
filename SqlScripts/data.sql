@@ -1,0 +1,10 @@
+﻿USE [NorthwindModel]
+GO
+INSERT [dbo].[Resume] ([Id], [CandidateName], [Photo], [ContactInformation], [DesiredJobDescription], [MainSkills], [ExperienceDescription], [EducationDescription], [AchievementsDescription], [IsDeleted]) VALUES (1, N'Туликов Вячеслав Иванович', N'GUID-0924-XHDS', N'г. Калуга, моб. + 7(915)621-24-46, vtulikov@corporation.mail.ru', N'Разработчик PHP', N'PHP, MySQL, CMS Joomla, phpAdmin', N'Опыт фронт-енд разработки более 5 лет', N'МИФИ, 2000 - 2006', N'Закончил курсы повышеня квалификации в Оксфордской Академии г. Саранска', 0)
+GO
+INSERT [dbo].[Resume] ([Id], [CandidateName], [Photo], [ContactInformation], [DesiredJobDescription], [MainSkills], [ExperienceDescription], [EducationDescription], [AchievementsDescription], [IsDeleted]) VALUES (2, N'Ларина Анастасия Львовна', N'GUID-7889-YUXZ', N'г. Москва, моб. + 7(960)700-83-18, larina@mail.ru', N'Разработчик .NET', N'C#, MsSQL, .NET Framework', N'Опыт разработки веб примложения более 7 лет', N'ЦНИИ МГУР, 1998 - 2004', N'Электронные курсы WebMasterClass', 0)
+GO
+INSERT [dbo].[Resume] ([Id], [CandidateName], [Photo], [ContactInformation], [DesiredJobDescription], [MainSkills], [ExperienceDescription], [EducationDescription], [AchievementsDescription], [IsDeleted]) VALUES (3, N'Варданян Станислав Георгиевич', N'GUID-5001-AFCD', N'г. Санкт-Петербург, моб. + 7(920)980-33-66, vardanyan@skoiour.com', N'Java developer', N'JavaEE, MySQL, Spring, WebServices', N'Backend development. 7 years experience', N'Stellaur Academy, 2001 - 2007', NULL, 0)
+GO
+INSERT [dbo].[Resume] ([Id], [CandidateName], [Photo], [ContactInformation], [DesiredJobDescription], [MainSkills], [ExperienceDescription], [EducationDescription], [AchievementsDescription], [IsDeleted]) VALUES (4, N'Jäkko Lägerferioub', N'GUID-2427-TTFE', N'Helsinki, mob +38 944 572 336 889, jakko.lagerferioub@mechta.fi', N'Pyton developer', N'Pyton, MongoDB, Unix', N'Frontend and backend development. 10+ years', N'Major University Post Graduation Civility, 1997 - 2002', N'Oxford University, Manchestere', 0)
+GO
