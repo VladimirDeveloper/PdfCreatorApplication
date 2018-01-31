@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Web.Mvc;
-using System.Web.Routing;
 using PdfCreatorApplication.Core.BusinessLogic.Export;
 using PdfCreatorApplication.Core.Utils.Helpers;
 using PdfCreatorApplication.WebSite.Utils;
@@ -78,6 +77,11 @@ namespace PdfCreatorApplication.WebSite.Controllers
             return ViewToString("../Templates/PDF/UsualResume", model);
         }
 
+        /// <summary>
+        /// Gets the image.
+        /// </summary>
+        /// <param name="imageId">The image identifier.</param>
+        /// <returns></returns>
         public ImageResult GetImage(string imageId)
         {
             return new ImageResult(AppDomain.CurrentDomain.BaseDirectory, imageId);
