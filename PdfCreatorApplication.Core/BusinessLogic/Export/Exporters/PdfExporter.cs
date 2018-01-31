@@ -37,11 +37,6 @@ namespace PdfCreatorApplication.Core.BusinessLogic.Export.Exporters
         /// <summary>
         /// Do exports
         /// </summary>
-        /// <remarks>
-        /// Code of this method was taken from this article
-        /// https://rupertmaier.wordpress.com/2014/08/22/creating-a-pdf-with-an-image-in-itextsharp/
-        /// Many thanks to Rupert Maier
-        /// </remarks>
         /// <returns></returns>
         public byte[] Export()
         {

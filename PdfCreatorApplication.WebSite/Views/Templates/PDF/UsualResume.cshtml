@@ -11,10 +11,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@resume.DesiredJobDescription - резюме кандидата.</title>
+    <style>
+        table {
+            border-style: solid;
+            border-collapse: collapse;
+            border-width: 1px;
+            border-color: burlywood;
+            border-style: solid; 
+        }        
+        
+        tr, td {
+            padding: 2px;
+            border-width: 1px;
+            border-color: burlywood;
+            border-style: solid; 
+        }
+    </style>
 </head>
 <body>
     <blockquote style="font-family: arialuni, arial;">
-        <h2>@resume.CandidateName</h2>
+        <h2>
+            <a href="@resume.CandidateUrl">@resume.CandidateName</a>
+        </h2>
     </blockquote>
     <div style="min-width: 1237px; max-width: 1270px; position: relative; margin: 0 auto;">
         <img src="data:imagestream/@resume.Photo" />
@@ -36,6 +54,16 @@
     </blockquote>
     <blockquote style="font-family: arialuni, arial;">
         @resume.EducationDescription
+    </blockquote>
+    <blockquote style="font-family: arialuni, arial;">
+        <table>
+            <tr>
+                <td>Место для печати                
+                </td>
+                <td>Печать...
+                </td>
+            </tr>
+        </table>
     </blockquote>
 </body>
 </html>

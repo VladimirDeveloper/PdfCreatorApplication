@@ -5,12 +5,6 @@ namespace PdfCreatorApplication.WebSite.Controllers
 {
     public class BaseController : Controller
     {
-        /// <summary>
-        /// Views to string.
-        /// </summary>
-        /// <param name="viewName">Name of the view.</param>
-        /// <param name="model">The model.</param>
-        /// <returns></returns>
         public string ViewToString(string viewName, object model)
         {
             ViewData.Model = model;

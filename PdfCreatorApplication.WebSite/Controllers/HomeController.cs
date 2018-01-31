@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System.Web.Routing;
 using PdfCreatorApplication.Core.BusinessLogic.Export;
 using PdfCreatorApplication.Core.Utils.Helpers;
 using PdfCreatorApplication.WebSite.ViewModels;
@@ -41,6 +42,9 @@ namespace PdfCreatorApplication.WebSite.Controllers
 
             var model = new ResumeViewModel(candidateId);
             model.Initialize();
+            var protocol = Request.Url != null ? Request.Url.Scheme : "http";
+            model.Resume.CandidateUrl = Url.Action("ShowResume", "Home", new { candidateId }, protocol);
+
             model.ResumeBody = ViewToString("../Templates/PDF/UsualResume", model);
 
             byte[] fileBytes = model.Export(type);
@@ -66,8 +70,17 @@ namespace PdfCreatorApplication.WebSite.Controllers
         {
             var model = new ResumeViewModel(candidateId);
             model.Initialize();
+            var protocol = Request.Url != null ? Request.Url.Scheme : "http";
+            model.Resume.CandidateUrl = Url.Action("ShowResume", "Home", new { candidateId }, protocol);
 
             return ViewToString("../Templates/PDF/UsualResume", model);
         }
+
+
+        public void Search()
+        {
+            SearchEngine.Search();
+        }
+        
     }
 }

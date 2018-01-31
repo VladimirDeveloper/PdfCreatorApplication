@@ -18,7 +18,6 @@ namespace PdfCreatorApplication.WebSite.Controllers
             HandleErrorInfo errorInfo = null;
             string errorMessage = "";
 
-	    // Analyzes model
             if (ViewData != null && ViewData.Model != null)
             {
                 errorInfo = (HandleErrorInfo)ViewData.Model;
