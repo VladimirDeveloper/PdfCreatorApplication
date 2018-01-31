@@ -1,7 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using System.Web.Routing;
 using PdfCreatorApplication.Core.BusinessLogic.Export;
 using PdfCreatorApplication.Core.Utils.Helpers;
+using PdfCreatorApplication.WebSite.Utils;
 using PdfCreatorApplication.WebSite.ViewModels;
 using PdfCreatorApplication.WebSite.ViewModels.ResumeViewModels;
 
@@ -76,11 +78,9 @@ namespace PdfCreatorApplication.WebSite.Controllers
             return ViewToString("../Templates/PDF/UsualResume", model);
         }
 
-
-        public void Search()
+        public ImageResult GetImage(string imageId)
         {
-            SearchEngine.Search();
+            return new ImageResult(AppDomain.CurrentDomain.BaseDirectory, imageId);
         }
-        
     }
 }

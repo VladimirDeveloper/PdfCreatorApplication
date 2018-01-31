@@ -49,16 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\BaseIndexer.cs" />
     <Compile Include="BusinessLogic\Export\ExporterFactory.cs" />
     <Compile Include="BusinessLogic\Export\Exporters\ImageTagProcessor.cs" />
     <Compile Include="BusinessLogic\Export\FileType.cs" />
     <Compile Include="BusinessLogic\Export\IExporter.cs" />
     <Compile Include="BusinessLogic\Export\Exporters\PdfExporter.cs" />
-    <Compile Include="BusinessLogic\ISearchable.cs" />
     <Compile Include="BusinessLogic\Models\Resume.cs" />
-    <Compile Include="BusinessLogic\SearchEngineFactory.cs" />
-    <Compile Include="BusinessLogic\TextSearchEngine.cs" />
     <Compile Include="DataAccess\DAOFactory.cs" />
     <Compile Include="DataAccess\DAO\IResumeDAO.cs" />
     <Compile Include="DataAccess\DAO\ResumeDAOrdb.cs" />
