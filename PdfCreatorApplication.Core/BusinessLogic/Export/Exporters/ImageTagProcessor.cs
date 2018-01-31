@@ -35,12 +35,7 @@ namespace PdfCreatorApplication.Core.BusinessLogic.Export.Exporters
         {
             string src;
 
-            /*
-            if (!tag.Attributes.TryGetValue(HTML.Attribute.SRC, out src))
-            {
-                return new List<IElement>(1);
-            }
-            */
+            // (!tag.Attributes.TryGetValue(HTML.Attribute.SRC, out src))
             if (!tag.Attributes.TryGetValue("data", out src))
             {
                 return new List<IElement>(1);
